@@ -14,7 +14,7 @@ func:
     sub esp, 3 ; allocate 3 bytes on stack
     mov [esp], byte 'H' ; move byte H to adress of stack pointer
     mov [esp+1], byte 'i' ; move byte i to adress of stack pointer + 1
-    mov [esp+2], byte 10 ; move newlien character to the end
+    mov [esp+2], byte 10 ; move newline character to the end
     mov eax, 4 ; sys_write syscall number
     mov ebx, 1 ; stdout file descriptor
     mov ecx, esp ; pointing to the stack pointer holding the beginning of the word
